@@ -1,0 +1,93 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #f7f7f7;
+}
+
+nav .links {
+  scale: 170%;
+  padding: center;
+  margin-left: auto;
+  align-items: center;
+  background-color: #dcdcdc;
+  font-size: 1.7em;
+  padding: 30px 20px;
+}
+
+nav .links a {
+  color: #333;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+nav .links a:hover {
+  animation: blink 1s infinite alternate ease-in-out;
+}
+
+#anasayfa h2 {
+  text-shadow: #333;
+  margin-top: 80px;
+  font-size: 500%;
+  color: #333;
+}
+
+#anasayfa a {
+  text-decoration: none;
+}
+#anasayfa h3 {
+  text-shadow: #333;
+  font-size: 1.5em;
+  color: #333;
+  transition: all 0.3s ease;
+  animation: blink 1s infinite alternate ease-in-out;
+}
+
+#anasayfa h3:hover {
+  color: #666;
+  animation: blink 1s infinite alternate ease-in-out;
+  transform: scale(1.2);
+}
+
+#linkler {
+  margin-top: 120px;
+}
+
+#linkler img {
+  margin: 35px;
+  width: 120px;
+  height: 120px;
+}
+
+#linkler img:hover {
+  transform: scale(1.2);
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#saat {
+  font-family: Arial, sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 10px;
+  width: auto;
+  display: inline-block;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  top: 20px;
+}
