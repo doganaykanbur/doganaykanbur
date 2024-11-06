@@ -91,3 +91,35 @@ nav .links a:hover {
   position: relative;
   top: 20px;
 }
+
+/* Mobil (tablet) için 768px ve altı */
+@media (max-width: 768px) {
+  nav .links {
+    font-size: 1.2em;
+    padding: 20px 10px;
+  }
+  #anasayfa h2 {
+    font-size: 300%;
+    margin-top: 40px;
+  }
+  #linkler a img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+/* Küçük ekranlar için 480px ve altı */
+@media (max-width: 480px) {
+  nav .links {
+    font-size: 1em;
+    padding: 15px 5px;
+  }
+  #anasayfa h2 {
+    font-size: 200%;
+    margin-top: 20px;
+  }
+  #linkler a img {
+    width: 40px;
+    height: 40px;
+  }
+}
