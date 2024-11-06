@@ -7,19 +7,18 @@ body {
 }
 
 nav .links {
-  scale: 170%;
-  padding: center;
-  margin-left: auto;
-  align-items: center;
+  transform: scale(1.7);
+  display: flex;
+  justify-content: center;
   background-color: #dcdcdc;
-  font-size: 1.7em;
-  padding: 30px 20px;
+  font-size: 1.2em;
+  padding: 20px;
 }
 
 nav .links a {
   color: #333;
   text-decoration: none;
-  margin-right: 20px;
+  margin: 0 15px;
 }
 
 nav .links a:hover {
@@ -27,17 +26,17 @@ nav .links a:hover {
 }
 
 #anasayfa h2 {
-  text-shadow: #333;
+  text-shadow: 2px 2px 4px #333;
   margin-top: 80px;
-  font-size: 500%;
+  font-size: 3em;
   color: #333;
 }
 
 #anasayfa a {
   text-decoration: none;
 }
+
 #anasayfa h3 {
-  text-shadow: #333;
   font-size: 1.5em;
   color: #333;
   transition: all 0.3s ease;
@@ -46,24 +45,38 @@ nav .links a:hover {
 
 #anasayfa h3:hover {
   color: #666;
-  animation: blink 1s infinite alternate ease-in-out;
   transform: scale(1.2);
 }
 
 #linkler {
-  margin-top: 120px;
+  margin-top: 50px;
 }
 
 #linkler img {
-  margin: 35px;
-  width: 120px;
-  height: 120px;
+  margin: 15px;
+  width: 80px;
+  height: 80px;
+  transition: transform 0.3s ease;
 }
 
 #linkler img:hover {
   transform: scale(1.2);
 }
 
+#saat {
+  font-size: 2em;
+  font-weight: bold;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 10px;
+  display: inline-block;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Animasyon */
 @keyframes blink {
   0% {
     opacity: 1;
@@ -75,51 +88,36 @@ nav .links a:hover {
     opacity: 1;
   }
 }
-#saat {
-  font-family: Arial, sans-serif;
-  font-size: 2em;
-  font-weight: bold;
-  margin-top: 20px;
-  padding: 10px;
-  background-color: #333;
-  color: #fff;
-  border-radius: 10px;
-  width: auto;
-  display: inline-block;
-  text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  position: relative;
-  top: 20px;
-}
 
-/* Mobil (tablet) için 768px ve altı */
+/* Tablet için 768px ve altı */
 @media (max-width: 768px) {
   nav .links {
-    font-size: 1.2em;
-    padding: 20px 10px;
+    font-size: 1em;
+    padding: 15px;
+    transform: scale(1);
   }
   #anasayfa h2 {
-    font-size: 300%;
+    font-size: 2.5em;
     margin-top: 40px;
   }
-  #linkler a img {
-    width: 50px;
-    height: 50px;
+  #linkler img {
+    width: 60px;
+    height: 60px;
   }
 }
 
-/* Küçük ekranlar için 480px ve altı */
+/* Telefon için 480px ve altı */
 @media (max-width: 480px) {
   nav .links {
-    font-size: 1em;
-    padding: 15px 5px;
+    font-size: 0.9em;
+    padding: 10px;
   }
   #anasayfa h2 {
-    font-size: 200%;
+    font-size: 2em;
     margin-top: 20px;
   }
-  #linkler a img {
-    width: 40px;
-    height: 40px;
+  #linkler img {
+    width: 50px;
+    height: 50px;
   }
 }
