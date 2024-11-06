@@ -11,3 +11,14 @@ function saatigoster() {
 setInterval(saatigoster, 1000);
 
 saatigoster();
+
+document.addEventListener("DOMContentLoaded", () => {
+  const showMoreButton = document.getElementById("showMoreButton");
+  const extraInfo = document.getElementById("extraInfo");
+
+  showMoreButton.addEventListener("click", () => {
+    // Extra bilgi gösterildiğinde butonu gizle
+    extraInfo.style.display = "block";
+    showMoreButton.style.display = "none";
+  });
+});
