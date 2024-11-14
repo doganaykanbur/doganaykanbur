@@ -1,34 +1,30 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const gallery = document.getElementById("gallery");
-  const sortButton = document.getElementById("sortButton");
-  const items = Array.from(gallery.getElementsByClassName("gallery-item"));
+  const galeri = document.getElementById("galeri");
+  const siralabuton = document.getElementById("siralabutonu");
+  const items = Array.from(galeri.getElementsByClassName("galeri-item"));
   let showAll = true;
 
-  sortButton.addEventListener("click", function () {
-    gallery.innerHTML = "";
+  siralabuton.addEventListener("click", function () {
+    galeri.innerHTML = "";
     if (showAll) {
-      gallery.appendChild(items[1]);
-      gallery.appendChild(items[0]);
-      sortButton.innerText = "Tüm Projeleri Göster";
+      galeri.appendChild(items[1]);
+      galeri.appendChild(items[0]);
+      siralabuton.innerText = "Tüm Projeleri Göster";
     } else {
-      items.forEach((item) => gallery.appendChild(item));
-      sortButton.innerText = "En Beğenilene Göre Sırala";
+      items.forEach((item) => galeri.appendChild(item));
+      siralabuton.innerText = "En Beğenilene Göre Sırala";
     }
     showAll = !showAll;
   });
 
-  document.querySelectorAll(".gallery-item").forEach((item) => {
+  document.querySelectorAll(".galeri-item").forEach((item) => {
     item.addEventListener("click", function () {
       const imgSrc = this.querySelector("img").src;
-      const description = this.querySelector(".caption p").innerText;
+      const description = this.querySelector(".aciklama p").innerText;
       document.getElementById("modalImg").src = imgSrc;
-      document.getElementById("modalCaption").innerText = description;
+      document.getElementById("modalaciklama").innerText = description;
       document.getElementById("modal").style.display = "block";
     });
-  });
-
-  document.getElementById("closeModal").addEventListener("click", function () {
-    document.getElementById("modal").style.display = "none";
   });
 
   window.addEventListener("click", (e) => {

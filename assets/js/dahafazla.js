@@ -6,10 +6,10 @@ document.addEventListener("DOMContentLoaded", () => {
     if (dahafazlabutton && text) {
       dahafazlabutton.addEventListener("click", () => {
         if (text.style.display === "none" || text.style.display === "") {
-          text.style.display = "inline"; // Show additional text inline
+          text.style.display = "inline";
           dahafazlabutton.textContent = "Daha Az Göster";
         } else {
-          text.style.display = "none"; // Hide additional text
+          text.style.display = "none";
           dahafazlabutton.textContent = "Daha Fazla Göster";
         }
       });
