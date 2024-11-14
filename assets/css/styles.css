@@ -191,6 +191,7 @@ nav .links a:hover {
     font-size: 2em;
   }
   #linkler img {
+    position: fixed;
     width: 30px;
     height: 30px;
   }
