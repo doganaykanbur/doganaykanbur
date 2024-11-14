@@ -144,35 +144,81 @@ nav .links a:hover {
 @media (max-width: 768px) {
   nav .links {
     font-size: 1em;
-    padding: 15px;
-  }
-  #anasayfa h2 {
-    font-size: 2.5em;
-    margin-top: 40px;
-  }
-  #linkler img {
-    width: 60px;
-    height: 60px;
-  }
-  #iletisim {
-    padding: 15px;
-  }
-}
-@media (max-width: 480px) {
-  nav .links {
-    font-size: 0.9em;
     padding: 10px;
   }
   #anasayfa h2 {
-    font-size: 2em;
-    margin-top: 20px;
+    font-size: 2.5em;
+    margin-top: 60px;
   }
   #linkler img {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
   }
   #iletisim {
+    padding: 10px;
+  }
+  .info-box {
+    padding: 20px;
+    max-width: 90%;
+  }
+  .egitim-gecmis {
+    margin-top: 20px;
+  }
+  .egitim-baslik h3 {
+    font-size: 1.5em;
+  }
+  .egitim-items {
+    width: 90%;
+    padding: 10px;
+  }
+  .yil {
+    font-size: 1em;
+  }
+  .logo {
+    width: 80px;
+    height: 80px;
+    top: -10px;
+    left: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  nav .links {
+    font-size: 0.9em;
+    padding: 8px;
+  }
+  #anasayfa h2 {
+    font-size: 2em;
+  }
+  #linkler img {
+    width: 30px;
+    height: 30px;
+  }
+  #iletisim {
+    padding: 10px;
+  }
+  .info-box {
     padding: 15px;
+    max-width: 95%;
+  }
+  .egitim-gecmis {
+    margin-top: 15px;
+  }
+  .egitim-baslik h3 {
+    font-size: 1.2em;
+  }
+  .egitim-items {
+    width: 100%;
+    padding: 8px;
+  }
+  .yil {
+    font-size: 0.9em;
+  }
+  .logo {
+    width: 60px;
+    height: 60px;
+    top: -5px;
+    left: 5px;
   }
 }
 .info-box {
