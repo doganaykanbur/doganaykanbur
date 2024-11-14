@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doğanay Kanbur</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script defer src="assets/js/saat.js"></script>
+    <script defer src="assets/js/gonder.js"></script>
+  </head>
+
+  <body>
+    <img src="assets/img/logo.png" alt="Logo" class="moon-logo" />
+    <nav>
+      <div class="links">
+        <p id="saat"></p>
+        <a href="#anasayfa">Anasayfa</a>
+        <a href="about.html">Hakkımda</a>
+        <a href="projeler.html">Projelerim</a>
+      </div>
+    </nav>
+
+    <section id="anasayfa">
+      <h2>Merhaba, Ben Doğanay Kanbur</h2>
+      <a href="projeler.html">
+        <h3>Full Stack Developer</h3>
+      </a>
+    </section>
+
+    <section id="iletisim">
+      <h3>İletişime Geçin</h3>
+      <label for="isim"
+        >İsim <span class="error-message" id="error-isim"></span
+      ></label>
+      <input type="text" id="isim" placeholder="İsminiz" /><br />
+
+      <label for="eposta"
+        >E-posta <span class="error-message" id="error-eposta"></span
+      ></label>
+      <input type="email" id="eposta" placeholder="E-Postanız" /><br />
+
+      <label for="mesaj"
+        >Mesaj <span class="error-message" id="error-mesaj"></span
+      ></label>
+      <textarea id="mesaj" placeholder="Mesajınız"></textarea><br />
+
+      <button onclick="gonder()">Gönder</button>
+    </section>
+
+    <section id="linkler">
+      <a href="https://www.instagram.com/doganaykanbur" target="_blank">
+        <img src="assets/img/instagram_logo.png" alt="Instagram Logo" />
+      </a>
+      <a
+        href="https://www.linkedin.com/in/doğanay-kanbur-412b58253"
+        target="_blank"
+      >
+        <img src="assets/img/linkedin_logo.png" alt="LinkedIn Logo" />
+      </a>
+      <a href="https://github.com/doganaykanbur" target="_blank">
+        <img src="assets/img/github_logo.png" alt="GitHub Logo" />
+      </a>
+    </section>
+  </body>
+</html>

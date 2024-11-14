@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projelerim - Doğanay Kanbur</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/projectstyles.css" />
+    <script defer src="assets/js/proje.js"></script>
+    <script defer src="assets/js/saat.js"></script>
+  </head>
+
+  <body>
+    <img src="assets/img/logo.png" alt="Logo" class="moon-logo" />
+    <nav>
+      <div class="links">
+        <p id="saat"></p>
+        <a href="index.html">Anasayfa</a>
+        <a href="about.html">Hakkımda</a>
+        <a href="projeler.html">Projelerim</a>
+      </div>
+    </nav>
+
+    <div class="container">
+      <section id="projects">
+        <h3>Projelerim</h3>
+
+        <button id="sortButton" class="sort-button">
+          En Beğenilene Göre Sırala
+        </button>
+
+        <div id="gallery" class="gallery">
+          <div class="gallery-item">
+            <h4>Price Tracker</h4>
+            <img
+              src="assets/img/pricetracker.png"
+              alt="Proje 1"
+              class="gallery-img"
+              title="Price Tracker"
+            />
+            <div class="caption">
+              <p>
+                <strong
+                  >Price Tracker is a Java application designed to monitor and
+                  track prices of products from various websites.</strong
+                >
+              </p>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <h4>Recipe Cost Calculator</h4>
+            <img
+              src="assets/img/recipecost.png"
+              alt="Proje 2"
+              class="gallery-img"
+              title="Recipe Cost Calculator"
+            />
+            <div class="caption">
+              <p>
+                <strong
+                  >We developed an application that calculates the price of
+                  recipes. The user creates a recipe with ingredients, and the
+                  cost of this recipe is calculated.</strong
+                >
+              </p>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <h4>Book Exchange Platform</h4>
+            <img
+              src="assets/img/bookexchange.png"
+              alt="Proje 3"
+              class="gallery-img"
+              title="Book Exchange Platform"
+            />
+            <div class="caption">
+              <p>
+                <strong
+                  >The Book Exchange Platform is a comprehensive solution
+                  designed to facilitate book exchanges among users.</strong
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div id="modal" class="modal">
+      <span id="closeModal" class="close">&times;</span>
+      <img id="modalImg" class="modal-content" />
+      <div id="modalCaption"></div>
+    </div>
+  </body>
+</html>
