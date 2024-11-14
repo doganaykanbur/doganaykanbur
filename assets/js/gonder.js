@@ -1,11 +1,14 @@
 function gonder() {
   const isim = document.getElementById("isim");
-  const Mesaj = document.getElementById("mesaj");
+  const mesaj = document.getElementById("mesaj");
   const eposta = document.getElementById("eposta");
   const errorIsim = document.getElementById("error-isim");
   const errorMesaj = document.getElementById("error-mesaj");
   const errorEposta = document.getElementById("error-eposta");
+  const successMessage = document.getElementById("success-message");
+
   let isValid = true;
+
   if (isim.value.trim() === "") {
     errorIsim.textContent = "Boş bırakılamaz";
     isim.focus();
@@ -13,13 +16,15 @@ function gonder() {
   } else {
     errorIsim.textContent = "";
   }
-  if (Mesaj.value.trim() === "") {
+
+  if (mesaj.value.trim() === "") {
     errorMesaj.textContent = "Boş bırakılamaz";
-    Mesaj.focus();
+    mesaj.focus();
     isValid = false;
   } else {
     errorMesaj.textContent = "";
   }
+
   if (eposta.value.trim() === "") {
     errorEposta.textContent = "Boş bırakılamaz";
     eposta.focus();
@@ -31,5 +36,12 @@ function gonder() {
   } else {
     errorEposta.textContent = "";
   }
+
+  if (isValid) {
+    successMessage.style.display = "block";
+  } else {
+    successMessage.style.display = "none";
+  }
+
   return isValid;
 }
